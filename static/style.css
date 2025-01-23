@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form label {
+    display: inline-block;
+    width: 100px;
+}
+
+form input {
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #343a40;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+img, video {
+    max-width: 100%;
+}
