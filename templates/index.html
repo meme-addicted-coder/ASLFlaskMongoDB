@@ -1,10 +1,22 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home - Flask App</title>
+    <title>Upload Data</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Welcome to the Flask App</h1>
-    <p>Use `/upload` endpoint to upload data and `/retrieve/<data_id>` to retrieve data.</p>
+    <h1>Upload Image, Video, and Text</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="image">Image:</label>
+        <input type="file" name="image" id="image"><br><br>
+        <label for="video">Video:</label>
+        <input type="file" name="video" id="video"><br><br>
+        <label for="text">Text:</label>
+        <input type="text" name="text" id="text"><br><br>
+        <input type="submit" value="Upload">
+    </form>
+    <br><br>
+    <a href="/retrieve">View Uploaded Data</a>
 </body>
 </html>
